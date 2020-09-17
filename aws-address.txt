@@ -1,0 +1,1 @@
+주소: ubuntu@ec2-3-35-18-33.ap-northeast-2.compute.amazonaws.com
