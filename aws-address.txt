@@ -1,1 +1,7 @@
-﻿ssh -i gh_key.pem ubuntu@ec2-3-35-18-33.ap-northeast-2.compute.amazonaws.com
+﻿<Server Address>
+ssh -i gh_key.pem ubuntu@ec2-3-35-18-33.ap-northeast-2.compute.amazonaws.com
+
+<Connect Server Jupyter to Local>
+source gh_edu/bin/activate
+jupyter notebook --allow-root --no-browser --port=8888
+ssh -i gh_key.pem -N -L 8888:localhost:8888 ubuntu@ec2-3-35-18-33.ap-northeast-2.compute.amazonaws.com
